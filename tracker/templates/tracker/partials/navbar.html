@@ -15,6 +15,14 @@
         <ul class="font-medium flex flex-col p-4 md:p-0 my-1 md:my-2 rounded-lg md:flex-row md:space-x-8">
         
         {% if user.is_authenticated %}
+
+            <li>
+                <a href="{% url 'transactions-list' %}" 
+                    class="block py-2 pl-3 pr-4 text-white rounded md:p-0" 
+                    aria-current="page">
+                        My Transactions
+                </a>
+            </li>
             <li>
                 <a href="{% url 'account_logout' %}" 
                     class="block py-2 pl-3 pr-4 text-white rounded md:p-0" 
