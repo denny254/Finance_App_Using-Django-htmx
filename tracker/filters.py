@@ -7,7 +7,7 @@ class TransactionFilter(django_filters.FilterSet):
         choices=Transaction.TRANSACTION_TYPE_CHOICES,
         field_name='type', 
         lookup_expr='iexact', 
-        empty_labe='Any',
+        empty_label='All',
     )
 
     class Meta:
